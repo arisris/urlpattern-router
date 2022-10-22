@@ -7,6 +7,7 @@ I personaly create this module in `deno`
 Create proxy router using url pattern api https://developer.mozilla.org/en-US/docs/Web/API/URL_Pattern_API
 
 ```ts
+  import { createProxyRouter } from "./mod.ts";
   const router = createProxyRouter()
     .get(new URLPattern("http(s?)://localhost/"), () => {
       return new Response("Hello")
